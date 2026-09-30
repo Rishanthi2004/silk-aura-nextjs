@@ -89,22 +89,22 @@ export const HeroBanner: React.FC = () => {
                 priority={index === 0}
                 className={`object-cover ${item.imagePosition || "object-center"}`}
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#0c1220] via-[#0c1220]/80 md:via-[#0c1220]/60 to-transparent w-full md:w-[60%]" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1220]/80 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0c1220]/70 via-[#0c1220]/40 to-transparent md:from-[#0c1220] md:via-[#0c1220]/60 md:to-transparent w-full md:w-[60%]" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1220]/50 via-transparent to-transparent md:from-[#0c1220]/80" />
             </div>
 
             {/* Slide Content Box */}
             <div className="relative z-20 h-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col justify-center">
               <div className="max-w-xl text-left space-y-4">
-                <span className="inline-block px-3 py-1 bg-[#c59b27]/20 border border-[#c59b27]/40 text-[#fef08a] text-[11px] uppercase tracking-widest font-semibold rounded-full">
+                <span className="inline-block px-3 py-1 bg-[#c59b27]/20 border border-[#c59b27]/40 text-[#fef08a] text-[11px] uppercase tracking-widest font-semibold rounded-full backdrop-blur-xs">
                   {item.tag}
                 </span>
 
-                <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight">
+                <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight drop-shadow-md md:drop-shadow-none">
                   {item.title}
                 </h1>
 
-                <p className="text-sm sm:text-base text-gray-200 font-light max-w-md">
+                <p className="text-sm sm:text-base text-gray-100 md:text-gray-200 font-light max-w-md drop-shadow-sm md:drop-shadow-none">
                   {item.subtitle}
                 </p>
 

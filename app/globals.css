@@ -44,3 +44,16 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #bfa890;
 }
+
+/* Hide Next.js floating dev indicator badge on all screens */
+nextjs-portal,
+[data-nextjs-dev-tools-button],
+[data-nextjs-toast],
+[data-nextjs-indicator],
+[data-nextjs-dialog-overlay],
+#next-logo {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
